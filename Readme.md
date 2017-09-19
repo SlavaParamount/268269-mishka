@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Славик Парамонов](https://up.htmlacademy.ru/adaptive/12/user/268269).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Калинин](https://up.htmlacademy.ru/adaptive/12/user/311377).
 
 ---
 
