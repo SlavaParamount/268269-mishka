@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Мишка</title>
+</head>
+<body>
+<header class="page-header">
+  <a class="page-header__logo">
+    <img class="page-header__logo-image" height="35" width="86" src="http://placehold.it/86x35" alt="Мишка">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <ul class="main-nav__list">
+      <li class="main-nav__item">
+        <a href="catalog.html">Каталог товаров</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="form.html">Вязание на заказ</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#">Поиск по сайту</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#">Корзина: пока пуста</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main class="page-main">
+  <h1 class="page-main__header">Вязание на заказ</h1>
+  <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+  <form class="page-main__form form" method="post" action="https://echo.htmlacademy.ru">
+    <div class="form__element type">
+      <h2 class="type__header"></h2>
+      <input type="radio" name="type" value="item">Аксессуар для интерьера
+      <input type="radio" name="type" value="toy">Детская игрушка
+    </div>
+    <div class="form__element">
+      <h2 class="form__header">Цвет</h2>
+      <label><input type="checkbox" name="color" value="white">Белый</label>
+      <label><input type="checkbox" name="color" value="grey">Серый</label>
+      <label><input type="checkbox" name="color" value="tiffany">&#171;Тиффани&#187;</label>
+      <label><input type="checkbox" name="color" value="black">Черный</label>
+      <label><input type="checkbox" name="color" value="pink">Розовый</label>
+      <label><input type="checkbox" name="color" value="orange">Оранжевый</label>
+    </div>
+    <div class="form__element">
+      <h2 class="form__header">ФИО</h2>
+      <label for="name">Имя:</label>
+      <input type="text" id="name" placeholder="Введите ваше имя:*" required>
+      <label for="surname">Фамилия:</label>
+      <input type="text" id="surname" placeholder="Введите вашу фамилию:*" required>
+      <label for="patronymic">Фамилия:</label>
+      <input type="text" id="patronymic" placeholder="Отчество, если желаете">
+    </div>
+    <div class="form__element">
+      <h2 class="form__header">ТЕЛ</h2>
+      <input type="text" name="phone" placeholder="+7 XXX XX XX*" required>
+    </div>
+    <div class="form__element">
+      <h2 class="form__header">E-MAIL</h2>
+      <input type="email" name="email" placeholder="Ваш email*" required>
+    </div>
+    <div class="form__element">
+      <h2 class="form__header">ДОП</h2>
+      <textarea name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+    </div>
+    <span class="form_require-text">*Поля обязательны для заполнения</span>
+    <button class="form__submit" type="submit">Отправить заказ</button>
+  </form>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__social social">
+    <ul class="social__list">
+      <li class="social__item">
+        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+      </li>
+    </ul>
+  </div>
+  <div class="page-footer__copyright copyright">
+    <b class="copyright__text">Разработано:</b>
+    <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+  </div>
+</footer>
+</body>
+</html>
