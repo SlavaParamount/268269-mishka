@@ -12,17 +12,17 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
           <a href="catalog.html">Каталог товаров</a>
         </li>
-        <li class="site-list__item">
+        <li class="main-nav__item">
           <a href="form.html">Вязание на заказ</a>
         </li>
-        <li class="site-list__item">
+        <li class="main-nav__item">
           <a href="#">Поиск по сайту</a>
         </li>
-        <li class="site-list__item">
+        <li class="main-nav__item">
           <a href="#">Корзина: пока пуста</a>
         </li>
       </ul>
@@ -61,17 +61,6 @@
       <img class="weekly-hit__pic" src="http://placehold.it/260x315" alt="Товар недели">
       <span class="weekly-hit__price">Цена: 990 руб.</span>
       <button class="weekly-hit__order" type="button">Заказать</button>
-      <div class="weekly-hit__popup buy-item hidden">
-        <h2 class="buy-item__header">Добавить в корзину</h2>
-        <span class="buy-item__size-header">Выберите размер:</span>
-        <input type="radio" id="small-size" class="buy-item__option buy-item__option--selected">
-        <label for="small-size">S</label>
-        <input type="radio" class="buy-item__option" id="medium-size">
-        <label for="medium-size">M</label>
-        <input type="radio" class="buy-item__option" id="large-size">
-        <label for="large-size">L</label>
-        <button class="buy-item__button" type="button">Добавить</button>
-      </div>
     </section>
     <section class="features">
       <h2 class="features__header">Коротко о нас</h2>
@@ -98,7 +87,7 @@
     </section>
     <section class="comments">
       <h2 class="comments__header">Отзывы</h2>
-      <p class="comments__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+      <blockquote class="comments__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
       <span class="comments__author">Анастасия Красильникова</span>
       <span class="comments__nickname">@misssssiskras</span>
       <div class="comments__arrows">
@@ -145,5 +134,16 @@
       <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
+  <section class="buy-item hidden">
+    <h2 class="buy-item__header">Добавить в корзину</h2>
+    <span class="buy-item__size-header">Выберите размер:</span>
+    <input type="radio" id="small-size" class="buy-item__option buy-item__option--selected">
+    <label for="small-size">S</label>
+    <input type="radio" class="buy-item__option" id="medium-size">
+    <label for="medium-size">M</label>
+    <input type="radio" class="buy-item__option" id="large-size">
+    <label for="large-size">L</label>
+    <button class="buy-item__button" type="button">Добавить</button>
+  </section>
   </body>
 </html>
