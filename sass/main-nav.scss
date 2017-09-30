@@ -1,0 +1,29 @@
+.main-nav {
+  background: #ffffff;
+
+  &__list {
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    list-style-type: none;
+    font-family: "Open Sans";
+    font-weight: 800;
+  }
+
+  &__toggle {
+    height: 20px;
+    width: 20px;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 36px 0;
+    border-bottom: 1px solid #ececec;
+  }
+}

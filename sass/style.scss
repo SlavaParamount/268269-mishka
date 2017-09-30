@@ -1,0 +1,21 @@
+body {
+  background: #f9f9f9;
+}
+
+@import "fonts";
+@import "page-header";
+@import "main-nav";
+@import "page-main";
+@import "catalog";
+@import "weekly-hit";
+@import "features";
+@import "comments";
+@import "contacts";
+@import "footer";
+@import "item";
+@import "production";
+@import "form";
+
+.hidden {
+  display: none;
+}

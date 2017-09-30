@@ -1,0 +1,38 @@
+.item {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #ededed;
+  display: flex;
+  flex-direction: column;
+
+  & img {
+    align-self: center;
+  }
+
+  &__header {
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 22px;
+    margin-top: 33px;
+    padding-left: 28px;
+  }
+
+  &__about {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 30px;
+    padding-left: 28px;
+  }
+
+  &__order {
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
