@@ -1,0 +1,41 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+  background: url("../img/house-background.jpg") no-repeat center top;
+
+  &__header {
+    font-family: "Open Sans";
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+    margin-bottom: 48px;
+    font-weight: 800;
+    font-size: 30px;
+    align-self: center;
+    text-align: center;
+
+    &--grey {
+      background: #f1f1f1;
+    }
+  }
+
+  &--no-background {
+    background: white;
+  }
+
+  &__order {
+    font-family: "Open Sans";
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 15px 0;
+    margin: 0 30px;
+    margin-top: 33px;
+    text-transform: uppercase;
+    background: none;
+    border: 2px solid #444444;
+    color: #444444;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,20 @@
+.production {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  border: 1px solid #ececec;
+
+  &__header {
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 24px;
+    margin-left: 90px;
+  }
+
+  &__text {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 13px;
+  }
+}

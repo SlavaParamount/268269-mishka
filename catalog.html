@@ -2,16 +2,18 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="page-header">
   <a class="page-header__logo">
-    <img class="page-header__logo-image" height="35" width="86" src="http://placehold.it/86x35" alt="Мишка">
+    <img class="page-header__logo-image" height="35" width="86" src="img/logo-mobile.svg" alt="Мишка">
   </a>
   <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <ul class="main-nav__list">
+    <button class="main-nav__toggle" type="button">E</button>
+    <ul class="main-nav__list hidden">
       <li class="main-nav__item">
         <a href="catalog.html">Каталог товаров</a>
       </li>
@@ -28,21 +30,19 @@
   </nav>
 </header>
 
-<main class="page-main">
-  <h1 class="page-main__header">Каталог товаров</h1>
+<main class="page-main page-main--no-background">
+  <h1 class="page-main__header page-main__header--grey">Каталог товаров</h1>
   <article class="item">
-    <img src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик" class="item__pic item__pic--rabbit">
-    <div class="item__description">
-      <h2 class="item__header">Зайчик-попрыгайчик</h2>
-      <span class="item__about">Росто 30см, вес 200 г</span>
-    </div>
+    <img src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик" class="item__pic item__pic--rabbit">
+    <h2 class="item__header">Зайчик-попрыгайчик</h2>
+    <span class="item__about">Рост 30см, вес 200 г</span>
     <div class="item__order">
       <span class="item__price">1290 руб.</span>
       <button class="item__buy">Добавить в корзину</button>
     </div>
   </article>
   <article class="item">
-    <img src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка" class="item__pic flasket">
+    <img src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка" class="item__pic flasket">
     <div class="item__description">
       <h2 class="item__header">Корзинка для белья</h2>
       <span class="item__about">Диаметр 15 см, высота 10 см</span>
@@ -53,7 +53,7 @@
     </div>
   </article>
   <article class="item">
-    <img src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка" class="item__pic toy-basket">
+    <img src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Корзинка" class="item__pic toy-basket">
     <div class="item__description">
       <h2 class="item__header">большая корзинка для игрушек</h2>
       <span class="item__about">Диаметр 30 см, высота 30 см</span>
@@ -65,30 +65,28 @@
   </article>
   <article class="page-main__production production">
     <h2 class="production__header">Процесс производства</h2>
-    <img src="http://placehold.it/260x195" width="260" height="195" alt="Производство">
-    <button type="button" class="production__play">Play</button>
+    <img src="img/video-mobile@1x.jpg" width="260" height="195" alt="Производство">
+    <button type="button" class="hidden production__play">Play</button>
     <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
   </article>
   <a class="page-main__order button" href="#">Сделать заказ</a>
 </main>
 
 <footer class="page-footer">
-  <div class="page-footer__social social">
-    <ul class="social__list">
-      <li class="social__item">
-        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-      </li>
-    </ul>
-  </div>
-  <div class="page-footer__copyright copyright">
-    <b class="copyright__text">Разработано:</b>
-    <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+  <ul class="page-footer__social-list">
+    <li class="page-footer__social-item">
+      <a class="page-footer__social-link page-footer__social-link--instagram" href="https://www.instagram.com/htmlacademy"></a>
+    </li>
+    <li class="page-footer__social-item">
+      <a class="page-footer__social-link page-footer__social-link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+    </li>
+    <li class="page-footer__social-item">
+      <a class="page-footer__social-link page-footer__social-link--twitter" href="#"></a>
+    </li>
+  </ul>
+  <div class="page-footer__copyright">
+    <b class="page-footer__copyright-text">Разработано</b>
+    <a class="button page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
   </div>
 </footer>
 </body>
