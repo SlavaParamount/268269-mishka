@@ -1,54 +1,69 @@
 .comments {
-  padding: 0 30px;
+  margin: 0 30px;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
+}
 
-  &__header {
-    font-family: "Open Sans";
-    font-weight: 800;
-    font-size: 25px;
+.comments__header {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.comments__text {
+  margin: 0;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 44px;
+}
+
+.comments__author {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.comments__nickname {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.comments__left-arrow,
+.comments__right-arrow {
+  height: 49px;
+  width: 130px;
+  margin-top: 38px;
+}
+
+.comments__write {
+  margin-top: 40px;
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 17px;
+  padding: 15px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: none;
+  border: 2px solid #444444;
+  color: #444444;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .comments {
+    width: 668px;
+    margin: 0 auto;
   }
+}
 
-  &__text {
-    margin: 0;
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 30px;
-    margin-bottom: 44px;
-  }
-
-  &__author {
-    font-family: "Open Sans";
-    font-weight: 800;
-    font-size: 17px;
-  }
-
-  &__nickname {
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: 17px;
-  }
-
-  &__left-arrow,
-  &__right-arrow {
-    height: 49px;
-    width: 130px;
-    margin-top: 38px;
-  }
-
-  &__write {
-    margin-top: 40px;
-    font-family: "Open Sans";
-    font-weight: 800;
-    font-size: 17px;
-    padding: 15px 0;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: none;
-    border: 2px solid #444444;
-    color: #444444;
-    text-align: center;
+@media (min-width: 1250px) {
+  .comments {
+    width: 1050px;
+    margin: 0 auto;
+    padding-left: 175px;
   }
 }

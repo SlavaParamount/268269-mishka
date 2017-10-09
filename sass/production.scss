@@ -1,20 +1,51 @@
 .production {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
+  margin: 0 30px;
   border: 1px solid #ececec;
+}
 
-  &__header {
-    font-family: "Open Sans";
-    font-weight: 800;
-    font-size: 17px;
-    line-height: 24px;
-    margin-left: 90px;
+.production__header {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 24px;
+  margin-left: 90px;
+}
+
+.production__text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.production__order {
+  font-family: "Open Sans";
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 15px 0;
+  margin: 0 30px;
+  margin-top: 33px;
+  text-transform: uppercase;
+  background: none;
+  border: 2px solid #444444;
+  color: #444444;
+  cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+  .production {
+    width: 668px;
+    margin: 0 auto;
   }
+}
 
-  &__text {
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: 13px;
+@media (min-width: 1250px) {
+  .production {
+    width: 1050px;
+    margin-top: 56px;
   }
 }

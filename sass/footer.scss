@@ -1,57 +1,86 @@
 .page-footer {
   display: flex;
   flex-direction: column;
+}
 
-  &__social-list {
-    display: flex;
-    justify-content: center;
+.page-footer__social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__social-item {
+  height: 22px;
+  width: 22px;
+  list-style-type: none;
+  margin: 30px 40px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.page-footer__social-link {
+  display: block;
+  width: 22px;
+  height: 28px;
+
+  &--instagram {
+    background: url("../img/icon-insta.svg") center no-repeat;
   }
 
-  &__social-item {
-    height: 22px;
-    width: 22px;
-    list-style-type: none;
-    margin: 30px 40px;
-
-    &:first-child {
-      margin-left: 0;
-    }
+  &--facebook {
+    background: url("../img/icon-fb.svg") center no-repeat;
   }
 
-  &__social-link {
+  &--twitter {
+    background: url("../img/icon-twitter.svg") center no-repeat;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  padding: 32px 0;
+}
+
+.page-footer__copyright-text {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 19px;
+}
+
+.page-footer__copyright-link {
+  margin-left: 30px;
+  width: 27px;
+  height: 34px;
+  background: url("../img/logo-htmlacademy.svg") no-repeat;
+}
+
+.page-footer__logo {
+  height: 35px;
+  width: 86px;
+  background: url("../img/main-logo.png") no-repeat;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    width: 668px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .page-footer__logo {
     display: block;
-    width: 22px;
-    height: 28px;
-
-    &--instagram {
-      background: url("../img/icon-insta.svg") center no-repeat;
-    }
-
-    &--facebook {
-      background: url("../img/icon-fb.svg") center no-repeat;
-    }
-
-    &--twitter {
-      background: url("../img/icon-twitter.svg") center no-repeat;
-    }
   }
 
-  &__copyright {
-    display: flex;
-    justify-content: center;
-    padding: 32px 0;
+  .page-footer__social-list {
+    width: 210px;
   }
 
-  &__copyright-text {
-    font-family: "Open Sans";
-    font-weight: 800;
-    font-size: 19px;
-  }
-
-  &__copyright-link {
-    margin-left: 30px;
-    width: 27px;
-    height: 34px;
-    background: url("../img/logo-htmlacademy.svg") no-repeat;
+  .page-footer__copyright {
+    width: 200px;
   }
 }

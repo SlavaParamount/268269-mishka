@@ -1,0 +1,18 @@
+.goods {
+  margin: 0 30px;
+}
+
+@media (min-width: 768px) {
+  .goods {
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1250px) {
+  .goods {
+    width: 1050px;
+    display: flex;
+    flex-direction: row;
+  }
+}

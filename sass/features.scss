@@ -1,24 +1,72 @@
 .features {
-  padding: 0 30px;
+  margin: 0 30px;
+}
 
-  &__header {
-    font-family: "Open Sans";
-    font-weight: 800;
-    font-size: 25px;
+.features__header {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.features__item {
+  list-style-type: none;
+  padding-top: 93px;
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 17px;
+
+  &--ecology {
+    background: url("../img/icon-feature-flower.svg") no-repeat;
   }
 
-  &__list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
+  &--style {
+    background: url("../img/icon-feature-money.svg") no-repeat;
   }
 
-  &__item {
-    list-style-type: none;
-    padding-top: 93px;
-    font-family: "Open Sans";
-    font-weight: 800;
-    font-size: 17px;
+  &--like {
+    background: url("../img/icon-feature-heart.svg") no-repeat;
+  }
+
+  &--handmade {
+    background: url("../img/icon-feature-ball.svg") no-repeat;
+  }
+
+  &--homeland {
+    background: url("../img/icon-feature-rocket.svg") no-repeat;
+  }
+
+  &--gift {
+    background: url("../img/icon-feature-gift.svg") no-repeat;
+  }
+}
+
+@media (min-width: 768px) {
+  .features {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .features__list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .features {
+    width: 875px;
+    margin: 0 auto;
   }
 }

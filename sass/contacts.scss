@@ -1,34 +1,58 @@
 .contacts {
   display: flex;
   flex-direction: column;
+}
 
-  &__header {
-    margin-left: 30px;
-    font-family: "Open Sans";
-    font-weight: 800;
-    font-size: 25px;
+.contacts__header {
+  margin-left: 30px;
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.contacts__table {
+  margin-left: 30px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.contacts__feedback {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 17px;
+  padding: 15px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid #444444;
+  color: #444444;
+  background: white;
+  margin: 0 30px;
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    width: 768px;
+    margin: 0 auto;
   }
 
-  &__table {
-    margin-left: 30px;
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 30px;
+  .contacts__header {
+    font-size: 43px;
+    line-height: 50px;
+    display: block;
+    background: url("../img/icon-flag.svg") no-repeat 620px top;
+    margin: 0 50px;
+    margin-top: 160px;
+    height: 100px;
   }
+}
 
-  &__feedback {
-    font-family: "Open Sans";
-    font-weight: 800;
-    font-size: 17px;
-    padding: 15px 0;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    border: 2px solid #444444;
-    color: #444444;
-    background: white;
-    margin: 0 30px;
-    margin-top: 40px;
+@media (min-width: 1250px) {
+  .contacts {
+    width: 1050px;
+    margin: 0 auto;
   }
 }

@@ -9,25 +9,38 @@
 <body>
 <header class="page-header">
   <a class="page-header__logo">
-    <img class="page-header__logo-image" height="35" width="86" src="img/logo-mobile.svg" alt="Мишка">
+    <img class="page-header__logo-image" height="35" width="86" src="img/main-logo.png" alt="Мишка">
   </a>
+  <button class="page-header__toggle" type="button">E</button>
   <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">E</button>
-    <ul class="main-nav__list hidden">
-      <li class="main-nav__item">
-        <a href="catalog.html">Каталог товаров</a>
-      </li>
-      <li class="main-nav__item">
-        <a href="form.html">Вязание на заказ</a>
-      </li>
-      <li class="main-nav__item">
-        <a href="#">Поиск по сайту</a>
-      </li>
-      <li class="main-nav__item">
-        <a href="#">Корзина: пока пуста</a>
-      </li>
+    <ul class="main-nav__list">
+      <div class="main_nav-first-line">
+        <li class="main-nav__item">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+      </div>
+      <div class="main_nav-second-line">
+        <li class="main-nav__item main-nav__item--search">
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li class="main-nav__item main-nav__item--cart">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+      </div>
+      <div class="main_nav-third-line">
+        <li class="main-nav__item">
+          <a href="catalog.html">Новые поступления</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html">Распродажа</a>
+        </li>
+      </div>
     </ul>
   </nav>
+  <span class="page-header__delievery">Бесплатная доставка по России</span>
 </header>
 
 <main class="page-main--no-background">

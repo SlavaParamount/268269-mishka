@@ -1,25 +1,45 @@
 .catalog {
   display: flex;
   flex-direction: column;
+}
 
-  &__link {
-    padding: 35px 0;
-    text-decoration: none;
-    color: white;
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: 24px;
+.catalog__link {
+  padding: 35px 0;
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+}
 
-    &--interior {
-      background: #63d1bb;
-    }
+.catalog__link--interior {
+  background: #63d1bb;
+}
 
-    &--toys {
-      background: #56c3b2;
-    }
+.catalog__link--toys {
+  background: #56c3b2;
+}
+
+.catalog__header {
+  margin-left: 30px;
+}
+
+
+@media (min-width: 768px) {
+  .catalog {
+    flex-direction: row;
+    margin: 0 50px;
+    justify-content: center;
   }
 
-  &__header {
-    margin-left: 30px;
+  .catalog__link {
+    width: 334px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .catalog__link {
+    width: 525px;
   }
 }
