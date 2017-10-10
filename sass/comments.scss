@@ -33,11 +33,17 @@
   margin-top: 8px;
 }
 
+.comments__arrows {
+  display: flex;
+  margin-top: 33px;
+}
+
 .comments__left-arrow,
 .comments__right-arrow {
   height: 49px;
-  width: 130px;
-  margin-top: 38px;
+  width: 50%;
+  background: white;
+  border: 1px solid #ececec;
 }
 
 .comments__write {
@@ -45,7 +51,7 @@
   font-family: "Open Sans";
   font-weight: 800;
   font-size: 17px;
-  padding: 15px 0;
+  padding: 12px 0;
   text-transform: uppercase;
   text-decoration: none;
   background: none;
