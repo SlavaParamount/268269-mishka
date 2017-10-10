@@ -1,6 +1,6 @@
 .comments {
   margin: 0 30px;
-  margin-top: 60px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -17,19 +17,20 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
-  margin-bottom: 44px;
 }
 
 .comments__author {
   font-family: "Open Sans";
   font-weight: 800;
   font-size: 17px;
+  margin-top: 30px;
 }
 
 .comments__nickname {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 17px;
+  margin-top: 8px;
 }
 
 .comments__left-arrow,

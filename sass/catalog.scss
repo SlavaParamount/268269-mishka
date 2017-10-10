@@ -1,28 +1,36 @@
 .catalog {
   display: flex;
   flex-direction: column;
+  margin-top: -4px;
 }
 
 .catalog__link {
-  padding: 35px 0;
   text-decoration: none;
   color: white;
   font-family: "Open Sans";
-  font-weight: 400;
+  font-weight: 800;
   font-size: 19px;
   line-height: 24px;
 }
 
 .catalog__link--interior {
-  background: #63d1bb;
+  background: #63d1bb url("../img/icon-interior.svg") no-repeat 87%;
 }
 
 .catalog__link--toys {
-  background: #56c3b2;
+  background: #56c3b2 url("../img/icon-toy.svg") no-repeat 89%;
 }
 
 .catalog__header {
+  display: block;
   margin-left: 30px;
+  padding-top: 23px;
+  padding-bottom: 30px;
+  width: 130px;
+}
+
+.catalog__link--toys span {
+  padding-top: 26px;
 }
 
 

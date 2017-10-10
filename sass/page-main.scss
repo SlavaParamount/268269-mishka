@@ -1,17 +1,20 @@
 .page-main {
   display: flex;
   flex-direction: column;
-  background: url("../img/house-background.jpg") no-repeat center top;
+  background: url("../img/house-background.jpg") no-repeat center -25px;
 }
 
 .page-main__header {
   font-family: "Open Sans";
-  padding-top: 80px;
+  box-sizing: border-box;
+  padding: 0 50px;
+  padding-top: 47px;
   padding-bottom: 80px;
   width: 100%;
   margin-bottom: 48px;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 27px;
+  line-height: 30px;
   align-self: center;
   text-align: center;
 

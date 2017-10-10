@@ -6,6 +6,9 @@
   font-family: "Open Sans";
   font-weight: 800;
   font-size: 25px;
+  margin-top: 67px;
+  margin-left: -2px;
+  margin-bottom: 32px;
 }
 
 .features__list {
@@ -17,13 +20,19 @@
 
 .features__item {
   list-style-type: none;
-  padding-top: 93px;
+  padding-top: 50px;
+  margin-top: 33px;
   font-family: "Open Sans";
   font-weight: 800;
   font-size: 17px;
+  line-height: 20px;
+
+  &:first-child {
+    margin-top: 0;
+  }
 
   &--ecology {
-    background: url("../img/icon-feature-flower.svg") no-repeat;
+    background: url("../img/icon-feature-flower.svg") no-repeat 7px -1px;
   }
 
   &--style {
@@ -31,15 +40,15 @@
   }
 
   &--like {
-    background: url("../img/icon-feature-heart.svg") no-repeat;
+    background: url("../img/icon-feature-heart.svg") no-repeat 7px 5px;
   }
 
   &--handmade {
-    background: url("../img/icon-feature-ball.svg") no-repeat;
+    background: url("../img/icon-feature-ball.svg") no-repeat 4px 0;
   }
 
   &--homeland {
-    background: url("../img/icon-feature-rocket.svg") no-repeat;
+    background: url("../img/icon-feature-rocket.svg") no-repeat -7px 3px;
   }
 
   &--gift {
